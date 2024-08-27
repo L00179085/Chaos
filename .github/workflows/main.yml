@@ -1,0 +1,21 @@
+name: Trigger Experiment
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to run the workflow on'
+        required: true
+        default: 'chaos-experiment-branch'
+
+jobs:
+  trigger_experiment:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
+
+    - name: Make a POST request to start experiment
+      run: |
+        curl -X POST https://13.60.104.75:5000/start_experiment/10 -k
