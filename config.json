@@ -1,0 +1,17 @@
+{
+  "jira_url": "https://jollyjerinjoy.atlassian.net",
+  "jira_username": "jollyjerinjoy@gmail.com",
+  "jira_api_token": "XXX",
+  "user_emails": ["aneeshrp@gmail.com", "jollyjerinjoy@gmail.com"],
+  "story_points_field": "customfield_10032",
+  "grafana_api_key": "XXX",
+  "graphana_url": "http://localhost:3000",
+  "board_id": 10,
+  "prometheus_port": 8000,
+  "mysql": {
+      "host": "localhost",
+      "user": "xx",
+      "password": "xxxx",
+      "database": "chaos_experiments"
+  }
+}
