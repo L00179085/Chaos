@@ -64,7 +64,7 @@ cursor = db_connection.cursor()
 # Create the Flask app instance
 app = Flask(__name__)
 
-@app.route('/start_experiment/<board_id>', methods=['POST'])
+@app.route('/start_experiment/<board_id>', methods=['POST','GET'])
 def start_experiment(board_id):
     try:
         run_ids = []
